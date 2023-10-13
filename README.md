@@ -21,3 +21,7 @@ python3 find.py --facility=[AAA]
 ```
 
 The resulting file will be in the root directory as `AFF_[AAA].json`
+
+Note that the data in the file, while directly from the FAA, might be slightly off. If you look the coordinates up, you will often find that the coordinates are an estimate of the actual position. If you look around the location, you will generally find it. RCOs for airports (those served by the ARTCC and not a TRACON) are usually just given as the airport center. The actual antenna/array is on the tower, or main terminal building, but may be a standalone radio tower. RCOs may also be colocated with ARSRs or VORs, and those are usually accurate. Standalone arrays are not often exact. Looking the name up on [RadioReference.com](https://www.radioreference.com/db/) might get you closer to the actual location.
+
+Overall, the data should be a close enough approximation on its own. If you wish to add precision, you can copy the coordinates into map software and try to find the actual antenna/array in satellite view.
